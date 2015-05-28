@@ -11,9 +11,10 @@ arch=('i686' 'x86_64')
 url="http://cgit.sukimashita.com/gnome-plist-editor.git"
 license=('GPL')
 groups=('multimedia')
-depends=('libplist' 'gtk2')
+depends=('libplist' 'gtk2' 'desktop-file-utils')
 makedepends=('hardening-wrapper' 'git' 'gnome-common')
 provides=('gnome-plist-editor')
+install=$_pkgname.install
 source=(
   'git+http://git.sukimashita.com/gnome-plist-editor.git'
   'gnome-plist-editor.desktop'
